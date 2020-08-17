@@ -25,7 +25,8 @@ async def on_message(message):
             else:
                 try:
                     msg = message.content[4:]
-                    if message.author.id == ★자신의 디스코드ID를 적어주세요(퍼미션):
+                    #메시지 관리권한이 있을시 사용가능
+                    if message.author.guild_permissions.manage_messages:
                         embed = discord.Embed(colour=0x1DDB16, timestamp=message.created_at, title="★★최상단 제목★★")
                         embed.add_field(name="★★제목★★", value=msg, inline=True)
                         embed.set_footer(text=f"discord.gg/★★서버초대코드★★")
