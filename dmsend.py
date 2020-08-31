@@ -1,6 +1,5 @@
 
-# 봉순#4888 : MASS DM BOT SOURCE
-# 오픈소스 이용하여 제작되었습니다
+# 봉순#6959 : MASS DM BOT SOURCE
 
 
 import discord
