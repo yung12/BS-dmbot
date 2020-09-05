@@ -28,7 +28,7 @@ async def on_message(message):
                     if message.author.guild_permissions.manage_messages:
                         embed = discord.Embed(color=0x1DDB16, timestamp=message.created_at)
                         embed.add_field(name="★★제목★★", value=msg, inline=True)
-                        embed.set_footer(text=f"discord.gg/★★서버초대코드★★")
+                        embed.set_footer(text="★맨 밑에 들어갈 내용★")
                         await i.send(embed=embed)
                 except:
                     pass
